@@ -115,9 +115,6 @@ function resetBugs() {
     } 
 }
 function winLevel() {
-    if(levelDatas[levelI + 1] !== undefined) {
-        document.getElementsByClassName("level")[levelI + 1].backgroundColor = "greenyellow"
-    }
     if(window[`level${levelI + 1}Finish`] !== undefined) {
         clearInterval(tutorialManager?.charInterval)
         tutorialManager = new TutorialManager();
@@ -125,6 +122,8 @@ function winLevel() {
     }
     if(unlockedLevelNum - 1 == levelI) {
         unlockedLevelNum++;
+        console.log(document.getElementsByClassName("level")[levelI + 1])
+        document.getElementsByClassName("level")[levelI + 1].style.backgroundColor = "greenyellow"
     }
 }
 document.getElementById("resetButton").onclick = () => {

@@ -118,7 +118,8 @@ var level1Tut = [
 var level1Finish = [
     "Congrats, you did it!",
     "You must be a VERY smart frog. But don't worry. This thing is starting to get trickier.",
-    "Hope you're still hungry."
+    "Hope you're still hungry.",
+    "Use the back button to go back to the map."
 ]
 var level2Tut = [
     "The thingies are starting to be trickier now.",
