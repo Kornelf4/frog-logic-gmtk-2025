@@ -1,0 +1,283 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+div#menu {
+    height: 100%;
+    position: relative;
+    background-image: url("assets/background/frog.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+    background-position: right;
+    background-color: rgb(101, 172, 154);
+}
+div#title1 {
+    text-align: center;
+    font-size: 50pt;
+    color: darkblue;
+    height: 10%;
+}
+div#title2 {
+    text-align: center;
+    font-size: 70pt;
+    color: rgb(255, 255, 255);
+}
+input[value="START"] {
+    background-color: rgb(12, 224, 129);
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px 0px 20px 0px;
+    transition-duration: 0.5s;
+    border: 0px;
+    font-size: 100px;
+    color: orange;
+    opacity: 0.5;
+        font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+input[value="START"]:hover, div.level:hover, input[value="Back"]:hover {
+    background-color: rgb(8, 118, 68);
+    border-radius: 0px 20px 0px 20px;
+}
+div#levelContainer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+     flex-direction: row;
+    flex-wrap: wrap;
+}
+div#levels {
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/background/pond.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+    background-position: center;
+}
+div.level {
+    height: 25%;
+    aspect-ratio: 1 / 1;
+    border: 5px solid black;
+    margin: 1%;
+    text-align: center;
+    font-size: x-large;
+    padding: auto;
+    background-color: red;
+    opacity: 0.5;
+    border-radius: 20px 0px 20px 0px;
+    transition-duration: 0.5s;
+}
+#elemContainer {
+    height: 80%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 15px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+div#levelTemp {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(24, 121, 205);
+}
+.flexC {
+    display: flex;
+    height: 100%;
+}
+.dumbPlaceHolder {
+    width: 80%;
+    height: 100%;
+}
+.rightBar {
+    width: 20%;
+    height: 90%;
+    display: block;
+    margin-right: 25px;
+    margin-top: -5%;
+}
+.toolBar {
+    border: 3px solid black;
+    margin: 5px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+.loopsBar {
+    border: 3px solid black;
+    margin: 5px;
+    width: 100%;
+    height: 20%;
+}
+.workspace {
+    border: 3px solid black;
+    margin: 5px;
+    width: 100%;
+    height: 70%;
+    overflow-y: scroll;
+}
+.topThing {
+    position: absolute;
+    text-align: center;
+    font-size: xx-large;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    top: 0;
+}
+.toolBarButton {
+    width: 100%;
+    height: 100%;
+    font-size: xx-large;
+    background-color: green;
+}
+.codeBlock {
+    margin: 3px;
+    padding: 1%;
+    border: 4px solid grey;
+    border-radius: 5px;
+}
+.blockLabel {
+    width: 70%;
+    font-size: x-large;
+}
+.blockStats {
+    display: flex;
+    width: 100%;
+}
+.T0 {
+    background: linear-gradient(90deg,rgba(191, 105, 145, 1) 0%, rgba(117, 47, 70, 1) 50%, rgba(181, 114, 145, 1) 100%);
+}
+.T1 {
+    background: linear-gradient(0deg,rgba(191, 105, 145, 1) 0%, rgba(117, 47, 70, 1) 50%, rgba(181, 114, 145, 1) 100%);
+}
+.T2 {
+    background: linear-gradient(90deg,rgba(191, 105, 145, 1) 0%, rgba(117, 47, 70, 1) 50%, rgba(181, 114, 145, 1) 100%);
+}
+.T3 {
+    background: linear-gradient(0deg,rgba(191, 105, 145, 1) 0%, rgba(117, 47, 70, 1) 50%, rgba(181, 114, 145, 1) 100%);
+}
+.tongue {
+    border-radius: 3px;
+}
+#backFromLevel {
+    border-radius: 5px;
+    padding: 2%;
+    background-color: green;
+    color: yellow;
+    font-size: x-large;
+    top: 0px;
+}
+#wiseFrogPic {
+    background-image: url("assets/wise/0.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20%;
+    aspect-ratio: 1 / 1;
+    border: 5px solid magenta;
+    position: absolute;
+    image-rendering: pixelated;
+    border-radius: 5px;
+    top: 75%;
+    left: -140%;
+    transition-duration: 0.5s;
+    z-index: 100;
+    transform: scaleX(-1);
+}
+#tutorialCont {
+    width: 60%;
+    height: 20%;
+    border: 5px solid rgb(5, 133, 46);
+    position: absolute;
+    border-radius: 5px;
+    top: 110%;
+    left: 20%;
+    transition-duration: 0.5s;
+    z-index: 100;
+    background-color: rgba(40, 213, 1, 0.413);
+    font-size: x-large;
+    pointer-events: none;
+}
+#cover {
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    position: absolute;
+    background-color: green;
+    pointer-events: none;
+    opacity: 0;
+    transition-duration: 0.3s;
+    padding: 1%;
+}
+#tutBack {
+    position: absolute;
+    left: 50%;
+    font-size: x-large;
+    background-color: rgb(12, 224, 129);
+    border-radius: 20px 0px 20px 0px;
+    transition-duration: 0.5s;
+    border: 0px;
+    pointer-events: auto;
+}
+#solutionButton {
+    transition-duration: 0.5s;
+    top: 0;
+    left: 20%;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: green;
+    color: yellow;
+    font-size: x-large;
+}
+#solutionPic {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: -100%;
+    width: 20%;
+    height: 70%;
+    transition-duration: 0.5s;
+    border: 5px solid red;
+    border-radius: 5px;
+    z-index: 1000;
+        background-repeat: no-repeat;
+    background-size:contain;
+}
+#resetButton {
+    background-color: red;
+}
+.flower {
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: absolute;
+    width: 25%;
+    height: 25%;
+}
+.gameOverThing {
+    position: absolute;
+    transition-duration: 0.5s;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-image: url("assets/gameover/game over_0.png");
+        background-repeat: no-repeat;
+    background-size:contain;
+}

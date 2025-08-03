@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    </style>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div id="solutionPic"></div>
+    <div id="wiseFrogPic"></div>
+    <div id="tutorialCont">
+        <strong>Old and Kinda Wise Frog</strong>
+        <input type="button" value="Back" onclick="tutorialManager.back()" id="tutBack">
+        <div id="tutText"></div>
+    </div>
+    <div id="cover"></div>
+    <div id="menu">
+        <input type="button" value="START" id="startButton" class="pix">
+        <div class="elemContainer"></div>
+    </div>
+    <div id="levels">
+        <div id="title1">The map of our beautiful pond</div>
+        <div id="levelContainer">
+            <div class="level">1</div>
+            <div class="level">2</div>
+            <div class="level">3</div>
+            <div class="level">4</div>
+            <div class="level">5</div>
+            <div class="level">6</div>
+            <div class="level">7</div>
+        </div>
+    </div>
+    <div id="levelTemp">
+        <input type="button" value="Back" id="backFromLevel">
+        <input type="button" value="Show solution" id="solutionButton">
+        <div class="topThing">Get bugs: 0/0</div>
+        <div class="flexC">
+            <div class="dumbPlaceHolder"></div>
+            <div class="rightBar">
+                <div class="toolBar">
+                    <input type="button" value=">" class="toolBarButton" id="runButton">
+                    <input type="button" value="||" class="toolBarButton" id="pauseButton">
+                    <input type="button" value="<" class="toolBarButton" id="resetButton">
+                    <input type="button" value="<|" class="toolBarButton" id="resetFrogButton">
+                </div>
+                <div class="loopsBar"></div>
+                <div class="workspace"></div>
+            </div>
+        </div>
+        <div id="elemContainer"></div>
+    </div>
+</body>
+</html>
+<script src="player.js"></script>
+<script src="tools/dimensionalArray.js"></script>
+<script src="tools/entity.js"></script>
+<script src="tools/input.js"></script>
+<script src="tools/loop.js"></script>
+<script src="tools/particle.js"></script>
+<script src="tools/rand.js"></script>
+<script src="tools/scenes.js"></script>
+
+<script src="levels/level1.js"></script>
+<script src="levels/level2.js"></script>
+<script src="levels/level3.js"></script>
+<script src="levels/level4.js"></script>
+<script src="levels/level5.js"></script>
+<script src="levels/level6.js"></script>
+<script src="levels/level7.js"></script>
+
+<script src="tutorial.js"></script>
+<script src="bugLogic.js"></script>
+<script src="codeBlocks.js"></script>
+<script src="gameManager.js"></script>
+<script src="loadBlocks.js"></script>
+<script src="terrain.js"></script>
+<script src="scenes/levels.js"></script>
+<script src="scenes/mainMenu.js"></script>
+<script src="animManager.js"></script>
